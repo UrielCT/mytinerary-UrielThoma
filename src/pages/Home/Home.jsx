@@ -1,15 +1,13 @@
 import React from 'react'
+import NavbarMain from '../../components/Navbar/NavbarMain'
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className='app-layout'>
 
       <header>
         <h1>MyTinerary</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Cities</a>
-        </nav>
+            <NavbarMain/>
         <button>
           <div>
             <img src="" alt="person" />
@@ -28,8 +26,7 @@ export const Home = () => {
             <button>View More</button>
           </div>
           <img src="" alt="imagen_inicio" />
-        </>
-        
+        </>  
       </main>
       
       <footer>
@@ -39,3 +36,6 @@ export const Home = () => {
     </div>
   )
 }
+
+
+export default Home
