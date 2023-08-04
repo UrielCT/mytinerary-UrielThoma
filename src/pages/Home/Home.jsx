@@ -1,5 +1,6 @@
 import React from 'react'
 import NavbarMain from '../../components/Navbar/NavbarMain'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => {
   return (
@@ -29,9 +30,7 @@ const Home = () => {
         </>  
       </main>
       
-      <footer>
-        <p>Todos los derechos reservados. Uriel Thoma 2023</p>
-      </footer>
+      <Footer/>
 
     </div>
   )
