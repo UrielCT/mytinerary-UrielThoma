@@ -3,21 +3,25 @@ import NavbarMain from '../../components/Navbar/NavbarMain'
 import Footer from '../../components/Footer/Footer'
 
 const LayoutMain = ({children}) => {
+  console.log(children)
   return (
     <div className='app-layout'>
 
-      <header>
+      <header className='app-header'>
         <h1>MyTinerary</h1>
+
         <NavbarMain/>
-        <button>
-          <div>
-            <img src="" alt="person" />
-            <p>Login</p>
-          </div>
-        </button>
+        
+          
+        <a className='main-btn-login' href="#">
+            <i className="fa-solid fa-user"></i>
+            <span>Login</span>
+        </a>
+        
+        
       </header>
 
-      <main>
+      <main className='app-main'>
         {children}
       </main>
       

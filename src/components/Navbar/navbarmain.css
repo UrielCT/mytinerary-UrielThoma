@@ -1,0 +1,32 @@
+nav{
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+    nav{
+        display: flex;
+        position:static;
+        background-color: transparent;
+    }
+    nav a:not(:last-child){
+        padding-right: 4rem;
+    }
+    
+}
