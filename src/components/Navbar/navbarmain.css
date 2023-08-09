@@ -8,7 +8,8 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 2rem;
+    gap: 6rem;
+    height: 3rem;
 }
 
 
@@ -25,8 +26,6 @@ nav{
         position:static;
         background-color: transparent;
     }
-    nav a:not(:last-child){
-        padding-right: 4rem;
-    }
+
     
 }

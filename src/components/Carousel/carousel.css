@@ -1,0 +1,38 @@
+.title{
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+/*Carousel*/
+
+.carousel{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+
+/*Card*/
+
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+/*buttons*/
+
+button{
+    padding: 2rem 0.5rem;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    background-color:rgba(1, 117, 143, 0.8);
+}
+

@@ -1,21 +1,20 @@
 import React from 'react'
 import LayoutMain from '../Layout/LayoutMain'
+import Carousel from '../../components/Carousel/Carousel'
+import './home.css'
 
 const Home = () => {
   return (
     
     <LayoutMain>
-      <>
-        <div className='main-card'>
-          <h2>Find your perfect trip, designed by insiders who know and love their cities!</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia, molestias nostrum 
-            quod optio ipsum possimus esse fuga deserunt ratione quasi, earum cupiditate voluptas aliquam!
-              Deserunt enim cumque atque recusandae!</p>
-          
-            <a className='main-btn-more' href="#">View More</a>
-          
-        </div>
-      </>
+      <main className='home-main'>
+        <section className='home-hero'>
+          <h2 className='title'>Popular MyTineraries</h2>
+        </section>
+        <section className='home-carousel'>
+          <Carousel/>
+        </section>
+      </main>
     </LayoutMain>
       
   )
