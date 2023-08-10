@@ -2,6 +2,7 @@ import Home from './pages/Home/Home'
 import LayoutMain from './layouts/LayoutMain'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Cities from './pages/Cities/Cities'
 
 
 
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/cities',
-        element: <Home/>
+        element: <Cities/>
       },
     ]
   },
