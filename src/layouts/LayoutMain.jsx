@@ -1,10 +1,12 @@
 import React from 'react'
-import NavbarMain from '../../components/Navbar/NavbarMain'
-import Footer from '../../components/Footer/Footer'
+import NavbarMain from '../components/Navbar/NavbarMain'
+import Footer from '../components/Footer/Footer'
+import { Outlet } from 'react-router-dom'
 
 
-const LayoutMain = ({children}) => {
-  console.log(children)
+const LayoutMain = () => {
+  
+
   return (
     <div className='app-layout'>
 
@@ -21,7 +23,7 @@ const LayoutMain = ({children}) => {
       </header>
 
       
-      {children}
+      <Outlet/>
       
       
       <Footer/>

@@ -1,11 +1,13 @@
 import React from 'react'
 import './navbarmain.css'
+import { Link, NavLink } from 'react-router-dom'
 
-const NavbarMain = () => {
+
+const NavbarMain = ({value}) => {
   return (
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Cities</a>
+        <Link to="/">Home</Link>
+        <Link to="/cities">Cities</Link>
     </nav>
   )
 }

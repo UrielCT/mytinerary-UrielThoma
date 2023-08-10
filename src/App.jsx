@@ -1,30 +1,38 @@
-//import { useState } from 'react'
 import Home from './pages/Home/Home'
-
-//import './App.css'
+import LayoutMain from './layouts/LayoutMain'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home/>
+    element: <LayoutMain/>,
+    children: [
+      {
+        path: '/',
+        element: <Home/>
+      },
+      {
+        path: '/cities',
+        element: <Home/>
+      },
+    ]
+  },
+  {
+    path: '*',
+    element: <h3>la página no existe</h3>
   }
 ])
 
 
+
+
 function App() {
-  //const [count, setCount] = useState(0)
 
   return (
-    <RouterProvider router={router}/>
-
-    //<>
-    //  <Home/>
-    //  {/* <Carrousel/> */}
-    // </>
-
+    <RouterProvider router={router}/> 
   )
 }
 
