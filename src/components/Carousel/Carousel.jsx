@@ -7,41 +7,32 @@ import cities from "../../data/cities"
 import './carousel.css'
 
 const Carousel = () => {
-  console.log(cities)
+  //console.log(cities)
 
   const [contador, setContador] = useState(0);
-  //const [datos, setDatos] = useState([]);
 
-  
-
-  
-
-  useEffect(() => {
-    // este como tiene el array vacio, se ejecuta solo cuando monta el componente
-    /* fetch("https://mindhub-xj03.onrender.com/api/amazing")
-      .then((response) => response.json())
-      .then((data) => setDatos(data.events)); */
-  }, []); 
   
   useEffect(() => {
-    // este useEffect se ejecuta cada vez que cambia el estado contador
-    console.log("Cuando cambia contador:", contador);
-  }, [contador]);
+    const interval = setInterval(() =>{
+      next();
+    },3500)
+    return () => {clearInterval(interval)};
+  });
 
 
   const prev = () => {
     if (contador == 0) {
-      setContador(cities.length - 4);
+      setContador(cities.length - 1);
     } else {
-      setContador(contador - 4);
+      setContador(contador - 1);
     }
   };
   
   const next = () => {
-    if (contador == cities.length - 4) {
+    if (contador == cities.length - 1) {
       setContador(0);
     } else {
-      setContador(contador + 4);
+      setContador(contador + 1);
     }
   }; 
 
@@ -53,10 +44,16 @@ const Carousel = () => {
           
           <div className='cards-container'>
 
-              <CarouselItem city={cities[contador]}/>
+            {
+              cities[contador].map((c) => {
+                return <CarouselItem city={c}/>
+              })
+            }
+
+              {/* <CarouselItem city={cities[contador]}/>
               <CarouselItem city={cities[contador + 1]}/>
               <CarouselItem city={cities[contador + 2]}/>
-              <CarouselItem city={cities[contador + 3]}/>
+              <CarouselItem city={cities[contador + 3]}/> */}
           </div>
 
           <button onClick={next}> {">"} </button>

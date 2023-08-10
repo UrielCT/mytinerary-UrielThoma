@@ -1,12 +1,15 @@
 import React from 'react'
 import './hero.css'
+import { Link, NavLink } from 'react-router-dom'
 
 const Hero = () => {
   return (
     <>
-        <h2>Find your perfect trip, designed by insiders who know and love their cities!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda unde amet voluptate veniam! Velit vel quos voluptate, harum in omnis natus facere dolore. Incidunt explicabo recusandae vel ratione labore ipsum?</p>
-        <button className='btn-viewMore' type="text">View More</button>
+        <h2 className='slogan'>Find your perfect trip, designed by insiders who know and love their cities!</h2>
+        
+        {/* <button className='btn-viewMore' type="text">View More</button> */}
+        <Link className='btn-viewMore' to="/cities">View More</Link>
+
     </>
         
   )
