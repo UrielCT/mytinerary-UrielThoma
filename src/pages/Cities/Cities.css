@@ -1,0 +1,41 @@
+.cities-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cities-container{
+    display: grid;
+    justify-items: center;
+    grid-auto-rows: 32rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    gap: 30px;
+
+    min-height: 100vh;
+    width: 80%;
+    margin: 3rem;  
+}
+
+
+.input-section{
+    margin-top: 4rem;
+    width: 90%;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px 20px;
+
+}
+
+.input-section input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 5px;
+    font-size: 18px;
+    color: white;
+}
+

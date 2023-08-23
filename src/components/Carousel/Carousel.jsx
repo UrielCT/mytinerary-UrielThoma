@@ -46,14 +46,11 @@ const Carousel = () => {
 
             {
               cities[contador].map((c) => {
-                return <CarouselItem city={c}/>
+                return <CarouselItem key={c.id} city={c}/>
               })
             }
 
-              {/* <CarouselItem city={cities[contador]}/>
-              <CarouselItem city={cities[contador + 1]}/>
-              <CarouselItem city={cities[contador + 2]}/>
-              <CarouselItem city={cities[contador + 3]}/> */}
+              
           </div>
 
           <button onClick={next}> {">"} </button>

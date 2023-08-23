@@ -9,8 +9,11 @@
 .carousel{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 1rem;
-    gap: 2rem;
+    gap: 1rem;
+    width: 100%;
+    
 }
 
 
@@ -20,6 +23,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
 }
 
 

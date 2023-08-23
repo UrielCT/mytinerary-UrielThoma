@@ -1,0 +1,46 @@
+.city_image{
+    width: 100%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+
+.cities-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    width: 100%;  
+    height: 100%;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0);
+    padding-bottom: 2rem;
+}
+
+
+.city-name{
+    color: black;
+}
+.city-country{
+    color: blue;
+}
+.city-description{
+    color: black;
+    margin: 1rem;
+}
+.city-currency{
+    color: black;
+}
+.city-language{
+    color:black
+}
+
+.btn-detail{
+    color: white;
+    background-color: rgb(0, 60, 255);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
