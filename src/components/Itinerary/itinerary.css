@@ -1,0 +1,30 @@
+.itinerary{
+    width: 70%;
+    background: burlywood;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.itinerary-image{
+    width: 30px;
+    height: 30px;
+    background-color: antiquewhite;
+}
+
+.itinerary-name{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* price container*/
+
+.price-container{
+    display: flex;
+    gap: 0.5rem;
+}
+

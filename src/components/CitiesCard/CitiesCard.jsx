@@ -3,7 +3,7 @@ import './citiesCard.css'
 import { Link } from 'react-router-dom'
 
 const CitiesCard = ({data}) => {
-    const {image, name, country, description, currency, language} = data
+    const {_id,image, name, country, description, currency, language} = data
 
     return ( 
         <div className='cities-card'>
@@ -13,7 +13,7 @@ const CitiesCard = ({data}) => {
             <p className='city-description'>{description}</p>
             <p className='city-currency'>{currency}</p>
             <p className='city-language'>{language}</p>
-            <Link className='btn-detail' to="/cities/detail" >Details</Link>
+            <Link className='btn-detail' to={`/cities/${_id}`}>Details</Link>
         </div>
   )
 }
