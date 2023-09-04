@@ -1,14 +1,14 @@
 .itinerary{
     width: 70%;
-    background: burlywood;
     border-radius: 10px;
+    background-color: rgb(0, 47, 105);
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
     padding: 1.5rem;
 }
 
 .itinerary-image{
-    width: 30px;
-    height: 30px;
-    background-color: antiquewhite;
+    width: 100px;
+    border-radius: 10px;
 }
 
 .itinerary-name{
@@ -16,9 +16,47 @@
     font-weight: 500;
 }
 
+.itinerary-container-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itinerary-image-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.itinerary-container-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items:end;
+}
 
 
+.itinerary-container-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
 
+.itinerary-hashtags-container{
+ display: flex;
+ flex-direction: column;
+ 
+}
+
+
+.itinerary-viewmore{
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 43, 195);
+}
 
 
 /* price container*/
@@ -28,3 +66,81 @@
     gap: 0.5rem;
 }
 
+
+
+/* accordion*/
+
+.itinerary-more-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(33, 33, 33);
+    border-radius: 10px;
+}
+
+.itinerary-more-container p{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: cursive;
+    text-shadow: 2px 2px 10px rgb(0,0,0);
+    margin: 4rem 0
+}
+
+
+@media (max-width: 600px) {
+    .itinerary-name{
+        font-size: 26px;
+        font-weight: 500;
+    }
+    
+    .itinerary-container-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .itinerary-image-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    
+    .itinerary-container-bottom{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    
+    
+   /* accordion*/
+
+.itinerary-more-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(33, 33, 33);
+    border-radius: 10px;
+}
+
+.itinerary-more-container p{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: cursive;
+    text-shadow: 2px 2px 10px rgb(0,0,0);
+    margin: 4rem 0
+}
+    
+}

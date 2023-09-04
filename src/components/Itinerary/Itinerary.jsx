@@ -1,32 +1,57 @@
-import React from 'react'
 import './itinerary.css'
 import Coin from '../Coin/Coin'
+import React, {useState, useEffect} from 'react'
+
 
 const Itinerary = ({data}) => {
   const {image, name, comments, duration, hashtags, price,likes} = data
 
   const coins = Array.from({ length: price }, (_, index) => index + 1);
 
+  const [acordeonVisible, setAcordeonVisible] = useState(false);
+
+  const toggleAcordeon = () => {
+    setAcordeonVisible(!acordeonVisible);
+  };
+
   return (
     <div className='itinerary'>
-        <img className='itinerary-image' src="" alt="img" />
-        <h2 className='itinerary-name'>{name}</h2>
-        <div className='price-container'>    
-          {
-            coins.map((i) =>(
-               <Coin key={i}/>
-            ))
-          }
+      <div className='itinerary-container-top'>
+        <div className='itinerary-image-container'>
+          <img className='itinerary-image' src={image} alt="img" />
+          <h2 className='itinerary-name'>{name}</h2>
         </div>
         
-        <p className='itinerary-duration'>{duration}hs</p>
-        <p className='itinerary-likes'>{likes} Likes</p>
+        <div className='itinerary-container-info'>
+          <div className='price-container'>    
+            {
+              coins.map((i) =>(
+                <Coin key={i}/>
+              ))
+            }
+          </div>
+          
+          <p className='itinerary-duration'>{duration}hs</p>
+          <p className='itinerary-likes'>{likes} Likes</p>
+        </div>
+      </div>
+        
+      <div className='itinerary-container-bottom'>
+        <div className='itinerary-hashtags-container'>
+          {
+            hashtags.map((i)  => <p className='itinerary-hashtags' key={i}>{i}</p>)
+          }
+        </div>
 
-        <p className='itinerary-hashtags'>#hashtags</p>
-        <p className='itinerary-hashtags'>#hashtags</p>
-        <p className='itinerary-hashtags'>#hashtags</p>
+        <button className='itinerary-viewmore' onClick={toggleAcordeon}>View More</button>
+      </div>
 
-        <button className='itinerary-viewmore'>View More</button>
+      {acordeonVisible && (
+        <div className='itinerary-more-container'>
+          <p>UNDER CONTRUCTION</p>
+        </div>
+      )}
+      
     </div>
   )
 }
