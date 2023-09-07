@@ -7,6 +7,22 @@ const getCitiesSync = createAction('getCitiesSync', (data) => {
     }
 })
 
+
+
+const getCitiesAsyncById = createAsyncThunk('getCitiesAsyncById', async ({id}) => {
+
+    try {
+        const res = await server.get('/cities/'  + id )
+        return res.data.response
+    } catch (error) {
+        console.log(error);
+        return []
+    }
+
+    
+})
+
+
 const getCitiesAsync = createAsyncThunk('getCitiesAsync', async () => {
 
     try {
@@ -29,4 +45,15 @@ const getCitiesAsync = createAsyncThunk('getCitiesAsync', async () => {
     } */
 })
 
-export {getCitiesSync, getCitiesAsync}
+
+const getCitiesSearchedSync = createAction('getCitiesSearchedSync', (inputText, cities) => {
+    return{
+        payload: {
+            inputText: inputText,
+            cities: cities
+        }
+    }
+})
+
+
+export {getCitiesSync, getCitiesAsync, getCitiesSearchedSync, getCitiesAsyncById}

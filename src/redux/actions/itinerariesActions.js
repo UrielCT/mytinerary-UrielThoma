@@ -16,10 +16,6 @@ const getItinerariesAsync = createAsyncThunk('getItinerariesAsync', async ({id})
         console.log(error);
         return []
     }
-
-    /* return{
-        payload: 'algo'
-    } */
 })
 
 export {getItinerariesSync, getItinerariesAsync}
