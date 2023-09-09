@@ -1,9 +1,11 @@
 import Home from './pages/Home/Home'
 import Cities from './pages/Cities/Cities'
-import LayoutMain from './layouts/LayoutMain'
-
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import SignIn from './pages/SignIn/SignIn'
+import SignUp from './pages/SignUp/SignUp'
 import CitiesDetail from './pages/CitiesDetail/CitiesDetail'
+import LayoutMain from './layouts/LayoutMain'
+import LayoutRegister from './layouts/LayoutRegister/LayoutRegister'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
 
@@ -23,6 +25,20 @@ const router = createBrowserRouter([
       {
         path: '/cities/:id',
         element: <CitiesDetail/>
+      },
+    ]
+  },
+  {
+    path: '/',
+    element: <LayoutRegister/>,
+    children:[
+      {
+        path: '/signin',
+        element: <SignIn/>
+      },
+      {
+        path: '/signup',
+        element: <SignUp/>
       },
     ]
   },

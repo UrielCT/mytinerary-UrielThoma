@@ -40,27 +40,6 @@
 
 /*Header*/
 
-.app-header{
-  height: 4rem;
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: antiquewhite;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-.main-btn-login{
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    background-color:rgba(1, 117, 143, 0.8);
-
-    padding: 0.3rem 1rem;
-    border-radius: 5px;
-}
-
 
 @media (min-width: 1024px) {
   .nav-container{
