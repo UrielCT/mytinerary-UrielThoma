@@ -24,3 +24,7 @@
     padding: 4px 12px;
     border-radius: 5px;
 }
+.header-user-image{
+    height: 2rem;
+    border-radius: 50%;
+}

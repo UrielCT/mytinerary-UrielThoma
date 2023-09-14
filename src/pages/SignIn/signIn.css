@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    margin: 2rem;
+    margin: 5rem;
 }
 
 .signin-container{
@@ -11,10 +10,41 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 15px;
+    width: 70%;
+    min-width: 250px;
+    background: rgb(0, 52, 156);
+    box-shadow: 5px 5px 15px black;
 
-    width: 40%;
-    background: red;
+}
 
+.signin-container form input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.signin-container form label{
+    color: white;
+}
+
+.signin-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+.signin_btn{
+    font: 18px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+.signin-btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -2,8 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    margin: 2rem;
+    margin: 5rem;
 }
 
 .signup-container{
@@ -11,25 +10,47 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 15px;
-    width: 40%;
-    background: red;
+    width: 70%;
+    min-width: 250px;
+    background: rgb(0, 52, 156);
+    box-shadow: 5px 5px 15px black;
+
 }
 
-.input-container{
+.signup-container form input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.signup-container form select{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.signup-container form label{
+    color: white;
+}
+
+.signup-container form {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
 }
 
-.input-container input{
-    width: 80%;
+
+.signup_btn{
+    font: 18px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
 }
 
-form{
+.signup-btn-container{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
+    justify-content: center;
 }
